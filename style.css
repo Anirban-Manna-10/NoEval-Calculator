@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Oxanium", sans-serif;
+    color: white;
+}
+
+.calculator{
+    background-color: #303030;
+    border-radius:20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.calculator .errorMsg{
+    padding: 10px;
+}
+
+.inputScreen{
+    height: 50px;
+}
+
+.inputScreen input{
+    background-color: transparent;
+    height: 100%;
+    border: none;
+    text-align: right;
+    padding: 5px 10px;
+    font-size: 55px;
+    width: 250px;
+    color: white;
+    font-family: "Oxanium", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.inputScreen input:focus{
+    border-color: transparent;
+    box-shadow: none;
+    border: 0 solid;
+    outline: none;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #4545451e;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3a3939;
+}
+
+.buttons .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.buttons .row .button{
+    /* border: 1px solid ; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+
+.buttons .row .button:hover{
+    background-color: #303030;
+}
+
+
+.buttons .row .button:active{
+    background-color:black ;
+}
+
+.buttons .row .button.del{
+    padding-left: 5px;
+}
+
+.buttons .row .button.allDel{
+    color: #ff9f0f;
+    font-weight: 500;
+}
+
+.buttons .row .button.operator{
+    font-size: 22px;
+}
+
+.buttons .row .button.divi{
+    font-size: 16px;
+}
+
+
+.buttons .row .button.equal{
+    background-color: #ff9901;
+    border-radius: px;
+}
+
+
